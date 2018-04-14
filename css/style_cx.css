@@ -1,0 +1,92 @@
+.panel-body {
+  color: #b95454;
+  padding-bottom: 0;
+}
+th {
+  text-align: center;
+}
+td {
+  white-space: nowrap;
+}
+.control-label {
+  float: left;
+}
+.cxicon {
+  margin-right: 30px;
+  float: right;
+}
+.cxicon {
+  display: inline-block;
+  padding-left: 3px;
+}
+header {
+  padding: 10px;
+  /*background: #428bca;*/
+  background: #D2D6DE;
+  border-bottom: 2px solid #428bca;
+  color: #5f1b1b;
+}
+.fixed-table-container {
+  border-top: 1px solid #D2D6DE;
+}
+.panel-default {
+  border-color: #a5a5a5;
+}
+.panel {
+  background-color: #f2f2f229;
+}
+/*.from-inputs{
+	display: inline-block;
+    
+    span{
+	    width: 120px;
+	    text-align: right;
+     	display: inline-block; 
+    }
+}
+.from-input{
+	display: inline-block;
+}*/
+.w150 {
+  width: 135px !important;
+}
+.panel-default > .panel-heading {
+  color: #fff;
+  background-color: #1BBC9B;
+  border-color: #1BBC9B;
+}
+.panel-default > .panel-heading > span {
+  color: #f7f0db;
+}
+.cxtj {
+  position: relative;
+  display: inline-block;
+  padding-right: 20px;
+  float: right;
+}
+.cxtj:after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 3px;
+  right: 0;
+  background-image: url(../img/showAnHide.png);
+  background-size: 100%;
+}
+.cxtj.hidecx:after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 3px;
+  right: 0;
+  background-image: url(../img/showAnHide.png);
+  background-size: 100%;
+  transform: rotate(180deg);
+}
+.btn-cx {
+  color: #fff;
+  background-color: #F39C12;
+  border-color: #F39C12;
+}

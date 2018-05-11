@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=1VDR8QCVaKiKqMHlET8bU5WIGTHXaigL"></script>
+    <!--<script src="js/apiv1.3.min.js"></script>-->
+    <title>地图展示</title>
+</head>
+<body>
+<div id="allmap" class="amap"></div>
+<div id="nav-bar">
+    <input type="button" value="缩放标尺">
+    <input type="button" value="标注">
+    <input type="button" value="交通状况">
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");    // 创建Map实例
+
+    var point = new BMap.Point(113.483312, 23.107395);
+    map.centerAndZoom(point, 18);  // 初始化地图,设置中心点坐标和地图级别
+
+
+    //鼠标滚轮缩放
+    map.enableScrollWheelZoom(true);
+
+
+    //标注
+    var marker = new BMap.Marker(point); //创建标注
+    map.addOverlay(marker); //添加标注
+
+
+    //交通流量
+    var traffic = new BMap.TrafficLayer(); //创建交通流量
+    map.addTileLayer(traffic); //添加交通流量
+    // var anchorBL = document.getElementsByClassName("anchorBL");
+    // anchorBL.style.display = "none";
+    window.onload = function(){
+        $(".anchorBL").css({"display": "none"});
+    }
+
+</script>
+</body>
+</ht
